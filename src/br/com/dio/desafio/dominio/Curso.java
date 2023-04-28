@@ -10,20 +10,20 @@ public class Curso extends Conteudo{
 
 	@Override
 	public double calcularXp() {
-		return XP_PADRAO + 10d;
+		return XP_PADRAO * cargaHoraria;
 	}
 	
-	public int getData() {
+	public int getCargaHoraria() {
 		return cargaHoraria;
 	}
 	
-	public void setData(int data) {
+	public void setCargaHoraria(int data) {
 		this.cargaHoraria = data;
 	}
 
 	@Override
 	public String toString() {
-		return "Curso [cargaHoraria=" + cargaHoraria + ", calcularXp()=" + calcularXp() + ", getData()=" + getData()
+		return "Curso [cargaHoraria=" + cargaHoraria + ", calcularXp()=" + calcularXp() + ", getCargaHoraria()=" + getCargaHoraria()
 				+ ", getTitulo()=" + getTitulo() + ", getDescricao()=" + getDescricao() + ", getClass()=" + getClass()
 				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
 	}
